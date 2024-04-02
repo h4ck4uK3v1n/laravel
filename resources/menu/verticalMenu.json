@@ -1,16 +1,92 @@
-{
-  "menu": [
-    {
-      "url": "/",
-      "name": "Home",
-      "icon": "menu-icon tf-icons bx bx-home-circle",
-      "slug": "pages-home"
-    },
-    {
-      "url": "/page-2",
-      "icon": "menu-icon tf-icons bx bx-file",
-      "name": "Page 2",
-      "slug": "pages-page-2"
-    }
-  ]
-}
+  {
+    "menu": [
+      {
+        "url": "/",
+        "name": "Home",
+        "icon": "menu-icon tf-icons bx bx-home-circle",
+        "slug": "pages-home"
+      },
+      {
+        "url": "/users",
+        "name": "Usuarios",
+        "icon": "menu-icon tf-icons bx bxs-user-detail",
+        "slug": "pages-users"
+      },
+      {
+        "url": "/materials",
+        "name": "Materiales",
+        "icon": "menu-icon tf-icons bx bxs-package",
+        "slug": "pages-materials"
+      },
+      {
+        "url": "/supliers",
+        "name": "Proveedores",
+        "icon": "menu-icon tf-icons bx bxs-group",
+        "slug": "pages-supliers"
+      },
+      {
+        "url": "/types",
+        "name": "Tipos de materiales",
+        "icon": "menu-icon tf-icons bx bxs-book",
+        "slug": "pages-types"
+      },
+      {
+        "name": "Listado",
+        "icon": "menu-icon tf-icons bx bx-list-ul",
+        "slug": "pages-listado",
+        "alwaysOpen": true,
+        "submenu": [
+          {
+            "url": "/materials/list",
+            "name": "Materiales",
+            "icon": "submenu-icon tf-icons bx bxs-package",
+            "slug": "pages-materials-list"
+          },
+          {
+            "url": "/supliers/list",
+            "name": "Proveedores",
+            "icon": "submenu-icon tf-icons bx bxs-group",
+            "slug": "pages-supliers-list"
+          },
+          {
+            "url": "/types/list",
+            "name": "Tipos de Materiales",
+            "icon": "submenu-icon tf-icons bx bxs-book",
+            "slug": "pages-types-list"
+          }
+        ]
+      },
+      {
+        "name": "Reportes",
+        "icon": "menu-icon tf-icons bx bxs-bar-chart-alt-2",
+        "slug": "pages-reports",
+        "alwaysOpen": true,
+        "submenu": [
+          {
+            "url": "/reports-M",
+            "name": "Reportes de los Materiales",
+            "icon": "submenu-icon tf-icons bx bxs-package",
+            "slug": "pages-reports-M"
+          },
+          {
+            "url": "/reports-S",
+            "name": "Reportes de los Proveedores",
+            "icon": "submenu-icon tf-icons bx bxs-group",
+            "slug": "pages-reports-S"
+          },
+          {
+            "url": "/reports-T",
+            "name": "Reportes de los Tipos de Materiales",
+            "icon": "submenu-icon tf-icons bx bxs-book",
+            "slug": "pages-reports-T"
+          }
+        ]
+      },
+      {
+        "url": "/backups",
+        "name": "Backups",
+        "icon": "menu-icon tf-icons bx bxs-cloud-upload",
+        "slug": "pages-backups"
+      }
+    ]
+  }

@@ -9,9 +9,10 @@ $configData = Helper::appClasses();
   <div class="app-brand demo">
     <a href="{{url('/')}}" class="app-brand-link">
       <span class="app-brand-logo demo">
-        @include('_partials.macros')
+        <img src="https://www.aapospotosi.com/gallery_gen/f9dbc1ce6d68e7af2066d9811ab62497_1020x1320_fit.png" style="width:100%"alt="">
+        {{-- @include('_partials.macros')--}}
       </span>
-      <span class="app-brand-text demo menu-text fw-bold ms-2">{{config('variables.templateName')}}</span>
+      <span class="app-brand-text demo menu-text fw-bold ms-2">AAPOS</span>
     </a>
 
     <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">

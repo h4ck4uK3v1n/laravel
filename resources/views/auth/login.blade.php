@@ -20,9 +20,11 @@ $customizerHidden = 'customizer-hide';
       <div class="flex-row text-center mx-auto">
         {{-- <img src="{{asset('assets/img/pages/login-'.$configData['style'].'.png')}}" alt="Auth Cover Bg color" width="520" class="img-fluid authentication-cover-img" data-app-light-img="pages/login-light.png" data-app-dark-img="pages/login-dark.png"> --}}
         <div class="mx-auto">
-          <h3>Discover the powerful admin template 🥳</h3>
+        <img src="https://www.aapospotosi.com/gallery_gen/f9dbc1ce6d68e7af2066d9811ab62497_1020x1320_fit.png" style="width:25em"alt="">
+          <h3>Administracion Autonoma para Obras Sanitarias</h3>
+          <h3>POTOSI</h3>
           <p>
-            Perfectly suited for all level of developers which helps you to <br> kick start your next big projects & Applications.
+          La Administración Autónoma para Obras Sanitarias AAPOS-POTOSÍ <br> es responsable de brindar los servicios de abastecimiento de agua potable y alcantarillado sanitario a la ciudad de Potosí 
           </p>
         </div>
       </div>
@@ -35,14 +37,16 @@ $customizerHidden = 'customizer-hide';
         <!-- Logo -->
         <div class="app-brand justify-content-center mb-4">
           <a href="{{url('/')}}" class="app-brand-link gap-2 mb-2">
-            <span class="app-brand-logo demo">@include('_partials.macros')</span>
-            <span class="app-brand-text demo h3 mb-0 fw-bold">{{config('variables.templateName')}}</span>
+            <!-- <span class="app-brand-logo demo">@include('_partials.macros')</span> -->
+            <!-- <span class="app-brand-text demo h3 mb-0 fw-bold">{{config('variables.templateName')}}</span> -->
           </a>
         </div>
         <!-- /Logo -->
-        <h4 class="mb-2">Welcome to {{config('variables.templateName')}}! 👋</h4>
-        <p class="mb-4">Please sign-in to your account and start the adventure</p>
-
+        <!-- <h4 class="mb-2">Welcome to {{config('variables.templateName')}}! 👋</h4> -->
+        <!-- <p class="mb-4">Please sign-in to your account and start the adventure</p> -->
+          
+          <img src="https://www.aapospotosi.com/gallery_gen/f3ac9540887267a1d14a013defd46ca0_910x704_fit.png" style="width:25em"alt="">
+          <h3 style="text-align:center;">Bienvenido</h3>
         @if (session('status'))
         <div class="alert alert-success mb-1 rounded-0" role="alert">
           <div class="alert-body">
@@ -55,7 +59,7 @@ $customizerHidden = 'customizer-hide';
           @csrf
           <div class="mb-3">
             <label for="login-email" class="form-label">Email</label>
-            <input type="text" class="form-control @error('email') is-invalid @enderror" id="login-email" name="email" placeholder="john@example.com" autofocus value="{{ old('email') }}">
+            <input type="text" class="form-control @error('email') is-invalid @enderror" id="login-email" name="email" placeholder="user@example.com" autofocus value="{{ old('email') }}">
             @error('email')
             <span class="invalid-feedback" role="alert">
               <strong>{{ $message }}</strong>
@@ -64,7 +68,7 @@ $customizerHidden = 'customizer-hide';
           </div>
           <div class="mb-3 form-password-toggle">
             <div class="d-flex justify-content-between">
-              <label class="form-label" for="login-password">Password</label>
+              <label class="form-label" for="login-password">Contraseña</label>
               @if (Route::has('password.request'))
               <a href="{{ route('password.request') }}">
                 <small>Forgot Password?</small>
@@ -89,17 +93,17 @@ $customizerHidden = 'customizer-hide';
               </label>
             </div>
           </div>
-          <button class="btn btn-primary d-grid w-100" type="submit">Sign in</button>
+          <button class="btn btn-primary d-grid w-100" type="submit">Iniciar Secion</button>
         </form>
 
-        <p class="text-center">
+        {{--<p class="text-center">
           <span>New on our platform?</span>
           @if (Route::has('register'))
           <a href="{{ route('register') }}">
             <span>Create an account</span>
           </a>
           @endif
-        </p>
+        </p>--}}
 
         <div class="divider my-4">
           <div class="divider-text">or</div>
